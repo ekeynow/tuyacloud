@@ -32,4 +32,3 @@ func WithTokenStore(s TokenStorage) Option {
 		o.storage = s
 	}
 }
-

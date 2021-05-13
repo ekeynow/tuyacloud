@@ -7,10 +7,10 @@ import (
 	"os"
 	"testing"
 
+	"github.com/ekeynow/tuyacloud"
+	"github.com/ekeynow/tuyacloud/tests/helpers"
 	"github.com/go-log/log/log"
 	"github.com/golang/mock/gomock"
-	"github.com/yunjuiot/tuyacloud"
-	"github.com/yunjuiot/tuyacloud/tests/helpers"
 )
 
 // NewClient return client.

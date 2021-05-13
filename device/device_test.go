@@ -3,10 +3,10 @@ package device_test
 import (
 	"testing"
 
+	"github.com/ekeynow/tuyacloud/device"
+	"github.com/ekeynow/tuyacloud/tests"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
-	"github.com/yunjuiot/tuyacloud/device"
-	"github.com/yunjuiot/tuyacloud/tests"
 )
 
 func TestQueryDevices(t *testing.T) {

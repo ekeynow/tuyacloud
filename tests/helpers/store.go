@@ -1,9 +1,9 @@
 package helpers
 
-import "github.com/yunjuiot/tuyacloud"
+import "github.com/ekeynow/tuyacloud"
 
 // StaticStore for token.
-type StaticStore struct{
+type StaticStore struct {
 	token string
 }
 
@@ -21,5 +21,3 @@ func (s *StaticStore) Refresh(c *tuyacloud.Client) error {
 func NewStaticStore(t string) *StaticStore {
 	return &StaticStore{token: t}
 }
-
-

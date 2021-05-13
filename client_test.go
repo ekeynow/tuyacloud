@@ -5,10 +5,10 @@ import (
 	"os"
 	"testing"
 
+	"github.com/ekeynow/tuyacloud"
+	"github.com/ekeynow/tuyacloud/user"
 	"github.com/go-log/log/log"
 	"github.com/stretchr/testify/require"
-	"github.com/yunjuiot/tuyacloud"
-	"github.com/yunjuiot/tuyacloud/user"
 )
 
 func TestNewClient(t *testing.T) {

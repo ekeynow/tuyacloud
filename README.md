@@ -1,11 +1,11 @@
 # tuyacloud
 
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/yunjuiot/tuyacloud)](https://pkg.go.dev/github.com/yunjuiot/tuyacloud)
-[![Build Status](https://github.com/yunjuiot/tuyacloud/workflows/CI/badge.svg)](https://github.com/yunjuiot/tuyacloud/actions)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gin-gonic/gin)](https://goreportcard.com/report/github.com/yunjuiot/tuyacloud)
-[![GitHub license](https://img.shields.io/github/license/yunjuiot/tuyacloud?style=flat-square)](https://github.com/yunjuiot/tuyacloud/blob/master/LICENSE)
-[![Release](https://img.shields.io/github/release/yunjuiot/tuyacloud.svg?style=flat-square&include_prereleases)](https://github.com/yunjuiot/tuyacloud/releases)
-[![GitHub issues](https://img.shields.io/github/issues/yunjuiot/tuyacloud?style=flat-square)](https://github.com/yunjuiot/tuyacloud/issues)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/ekeynow/tuyacloud)](https://pkg.go.dev/github.com/ekeynow/tuyacloud)
+[![Build Status](https://github.com/ekeynow/tuyacloud/workflows/CI/badge.svg)](https://github.com/ekeynow/tuyacloud/actions)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gin-gonic/gin)](https://goreportcard.com/report/github.com/ekeynow/tuyacloud)
+[![GitHub license](https://img.shields.io/github/license/yunjuiot/tuyacloud?style=flat-square)](https://github.com/ekeynow/tuyacloud/blob/master/LICENSE)
+[![Release](https://img.shields.io/github/release/yunjuiot/tuyacloud.svg?style=flat-square&include_prereleases)](https://github.com/ekeynow/tuyacloud/releases)
+[![GitHub issues](https://img.shields.io/github/issues/yunjuiot/tuyacloud?style=flat-square)](https://github.com/ekeynow/tuyacloud/issues)
 
 unofficial Tuya Cloud API SDK 
 
@@ -38,7 +38,7 @@ Project is __under active development__, API may changes in futures.
 ## Install
 
 ```console
-go get github.com/yunjuiot/tuyacloud
+go get github.com/ekeynow/tuyacloud
 ```
 
 ## Contribute

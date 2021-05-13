@@ -98,7 +98,7 @@ func (q *QueryDevicesRequest) URL() string {
 
 // QueryDevicesResponse returns devices list.
 type QueryDevicesResponse struct {
-	Total  int                         `json:"total"`
+	Total   int                         `json:"total"`
 	Devices []QueryDeviceDetailResponse `json:"devices"`
 }
 

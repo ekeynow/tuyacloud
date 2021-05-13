@@ -164,8 +164,8 @@ const (
 type OfflineTempPwdRequest struct {
 	DeviceID string `json:"-" validate:"required"`
 
-	EffectiveTime int64    `json:"effective_time" validate:"required"`
-	InvalidTime   int64    `json:"invalid_time" validate:"required"`
+	EffectiveTime int64  `json:"effective_time" validate:"required"`
+	InvalidTime   int64  `json:"invalid_time" validate:"required"`
 	Name          string `json:"name"`
 	Type          int    `json:"type"`
 	Lang          string `json:"lang" validate:"required"`
