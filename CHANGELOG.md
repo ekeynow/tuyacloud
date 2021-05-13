@@ -2,6 +2,13 @@
 ## [Unreleased]
 
 
+<a name="v0.4.1"></a>
+## [v0.4.1] - 2021-05-13
+### Bug Fixes
+- testify module not imported
+- re-enable backoff policy
+
+
 <a name="v0.4.0"></a>
 ## [v0.4.0] - 2021-05-13
 ### Bug Fixes
@@ -90,7 +97,8 @@
 - Update README.md
 
 
-[Unreleased]: https://github.com/ekeynow/tuyacloud/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/ekeynow/tuyacloud/compare/v0.4.1...HEAD
+[v0.4.1]: https://github.com/ekeynow/tuyacloud/compare/v0.4.0...v0.4.1
 [v0.4.0]: https://github.com/ekeynow/tuyacloud/compare/v0.3.0...v0.4.0
 [v0.3.0]: https://github.com/ekeynow/tuyacloud/compare/v0.2.0...v0.3.0
 [v0.2.0]: https://github.com/ekeynow/tuyacloud/compare/v0.2.0-beta.1...v0.2.0
