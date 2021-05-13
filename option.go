@@ -10,6 +10,7 @@ type options struct {
 	storage    TokenStorage
 }
 
+// Option settings.
 type Option func(o *options)
 
 // WithHTTPClient setup HTTPClient

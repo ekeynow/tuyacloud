@@ -155,9 +155,12 @@ type DynamicPwdResponse struct {
 }
 
 const (
+	// OfflineTempPwdTypeMultiTime multiple uses.
 	OfflineTempPwdTypeMultiTime = 0
-	OfflineTempPwdTypeOneTime   = 1
-	OfflineTempPwdTClean        = 9
+	// OfflineTempPwdTypeOneTime single use.
+	OfflineTempPwdTypeOneTime = 1
+	// OfflineTempPwdTClean clear all passwords.
+	OfflineTempPwdTClean = 9
 )
 
 // OfflineTempPwdRequest request to a offline temp password
@@ -171,6 +174,7 @@ type OfflineTempPwdRequest struct {
 	Lang          string `json:"lang" validate:"required"`
 }
 
+// Body struct.
 func (d *OfflineTempPwdRequest) Body() interface{} {
 	return d
 }

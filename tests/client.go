@@ -27,6 +27,7 @@ func NewClient(t *testing.T) (client *tuyacloud.Client) {
 	if token != "" {
 		store = helpers.NewStaticStore(token)
 	}
+	require.NotEmpty(t, token, "Access Token is empty.")
 	client = tuyacloud.NewClient(
 		tuyacloud.APIEndpointCN, id, key, tuyacloud.WithTokenStore(store),
 		tuyacloud.WithLogger(log.New()),
