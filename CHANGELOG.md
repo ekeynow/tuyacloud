@@ -2,10 +2,28 @@
 ## [Unreleased]
 
 
+<a name="v0.4.0"></a>
+## [v0.4.0] - 2021-05-13
+### Bug Fixes
+- AccessToken refresh correctly. Close [#2](https://github.com/ekeynow/tuyacloud/issues/2)
+
+### Miscellaneous
+- rename module to github.com/ekeynow/tuyacloud. Close [#1](https://github.com/ekeynow/tuyacloud/issues/1)
+
+
+<a name="v0.3.0"></a>
+## [v0.3.0] - 2021-05-12
+### Miscellaneous
+- Deprecated this repo
+
+
 <a name="v0.2.0"></a>
-## [v0.2.0] - 2020-12-30
+## [v0.2.0] - 2020-12-31
 ### Features
 - compensation mechanism for refresh token
+
+### Miscellaneous
+- fix lint
 
 
 <a name="v0.2.0-beta.1"></a>
@@ -36,6 +54,9 @@
 - Pairing Management
 - User Management
 
+### Miscellaneous
+- Github Action should only works in master branch and PR
+
 
 <a name="v0.1.1"></a>
 ## [v0.1.1] - 2020-09-07
@@ -53,6 +74,9 @@
 - Pairing Management
 - User Management
 
+### Miscellaneous
+- Github Action should only works in master branch and PR
+
 
 <a name="v0.1.0"></a>
 ## v0.1.0 - 2020-09-02
@@ -61,10 +85,16 @@
 - catalog/smartlock
 - More powerful API Client
 
+### Miscellaneous
+- Make CI happy
+- Update README.md
 
-[Unreleased]: https://github.com/yunjuiot/tuyacloud/compare/v0.2.0...HEAD
-[v0.2.0]: https://github.com/yunjuiot/tuyacloud/compare/v0.2.0-beta.1...v0.2.0
-[v0.2.0-beta.1]: https://github.com/yunjuiot/tuyacloud/compare/v0.1.3...v0.2.0-beta.1
-[v0.1.3]: https://github.com/yunjuiot/tuyacloud/compare/v0.1.2...v0.1.3
-[v0.1.2]: https://github.com/yunjuiot/tuyacloud/compare/v0.1.1...v0.1.2
-[v0.1.1]: https://github.com/yunjuiot/tuyacloud/compare/v0.1.0...v0.1.1
+
+[Unreleased]: https://github.com/ekeynow/tuyacloud/compare/v0.4.0...HEAD
+[v0.4.0]: https://github.com/ekeynow/tuyacloud/compare/v0.3.0...v0.4.0
+[v0.3.0]: https://github.com/ekeynow/tuyacloud/compare/v0.2.0...v0.3.0
+[v0.2.0]: https://github.com/ekeynow/tuyacloud/compare/v0.2.0-beta.1...v0.2.0
+[v0.2.0-beta.1]: https://github.com/ekeynow/tuyacloud/compare/v0.1.3...v0.2.0-beta.1
+[v0.1.3]: https://github.com/ekeynow/tuyacloud/compare/v0.1.2...v0.1.3
+[v0.1.2]: https://github.com/ekeynow/tuyacloud/compare/v0.1.1...v0.1.2
+[v0.1.1]: https://github.com/ekeynow/tuyacloud/compare/v0.1.0...v0.1.1

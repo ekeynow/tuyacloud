@@ -27,7 +27,8 @@ type Client struct {
 	logger     log.Logger
 	storage    TokenStorage
 	validator  *validator.Validate
-	maxRetires uint64
+
+	lock sync.Mutex // lock for token refresh
 }
 
 // NewClient returns API client.
@@ -175,6 +176,7 @@ func (c *Client) TokenSign(token, timestamp string) string {
 
 // Token returns access token.
 func (c *Client) Token() (token string, err error) {
+	// Mutex protection for concurrency refresh token.
 	c.lock.Lock()
 	defer c.lock.Unlock()
 	token = c.storage.Token()
