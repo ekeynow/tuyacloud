@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/go-log/log"
@@ -23,6 +24,8 @@ type Client struct {
 	logger     log.Logger
 	storage    TokenStorage
 	validator  *validator.Validate
+
+	lock sync.Mutex // lock for token refresh
 }
 
 // NewClient returns API client.
@@ -149,6 +152,9 @@ func (c *Client) TokenSign(token, timestamp string) string {
 }
 
 func (c *Client) Token() (token string, err error) {
+	// Mutex protection for concurrency refresh token.
+	c.lock.Lock()
+	defer c.lock.Unlock()
 	token = c.storage.Token()
 	if token == "" {
 		err = c.storage.Refresh(c)

@@ -24,7 +24,7 @@ func (s *MemoryStore) Refresh(c *Client) (err error) {
 		r.SetRefresh(s.refreshToken)
 	}
 	var req *http.Request
-	req, err = c.Request(&TokenRequest{})
+	req, err = c.Request(&TokenRequest{s.refreshToken})
 	if err != nil {
 		return
 	}
