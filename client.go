@@ -27,8 +27,7 @@ type Client struct {
 	logger     log.Logger
 	storage    TokenStorage
 	validator  *validator.Validate
-
-	lock sync.Mutex // lock for token refresh
+	maxRetires uint64
 }
 
 // NewClient returns API client.
